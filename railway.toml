@@ -1,0 +1,10 @@
+# Railway will auto-detect Node.js and run "npm start"
+# No configuration needed beyond this file existing
+
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "node server.js"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
